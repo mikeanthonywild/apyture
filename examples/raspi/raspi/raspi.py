@@ -35,7 +35,7 @@ class RasberryPi(StateMachineMixin, Device):
             out = self._uart.read()
         except SerialTimeout:
             out = ''
-        
+ 
         return out
 
     def kernel_started_cb(self):
